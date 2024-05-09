@@ -1,25 +1,17 @@
+import { tailwindPreset } from "./src/libs/tailwind-preset";
 import { type Config } from "tailwindcss";
-import defaultTheme from "tailwindcss/defaultTheme";
+import { neutral, orange } from "tailwindcss/colors";
 
 const config: Config = {
   content: ["./src/**/*.tsx", "./index.html"],
   darkMode: "class",
+  presets: [tailwindPreset],
   theme: {
     extend: {
-      minHeight: {
-        // @ts-expect-error this can be an array
-        screen: ["100vh", "100dvh"],
-      },
-      height: {
-        // @ts-expect-error this can be an array
-        screen: ["100vh", "100dvh"]
-      },
-      fontFamily: {
-        sans: [
-          "Pretendard\\ Variable",
-          "Pretendard",
-          ...defaultTheme.fontFamily.sans,
-        ],
+      colors: {
+        base: neutral,
+        primary: orange,
+        accent: orange,
       },
     },
   },

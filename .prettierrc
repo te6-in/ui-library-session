@@ -5,6 +5,7 @@
     "^@/components/.*$",
     "^lucide-react$",
     "^vite$",
+    "^rollup$|^@rollup/",
     "^react$|^react-dom$"
   ],
   "importOrderSeparation": true,
