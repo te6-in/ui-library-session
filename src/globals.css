@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  body {
+    @apply bg-base-50 dark:bg-base-dark-950;
+  }
+}

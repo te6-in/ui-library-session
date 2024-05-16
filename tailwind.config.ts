@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         base: neutral,
+        "base-dark": neutral,
         primary: orange,
         accent: orange,
       },
